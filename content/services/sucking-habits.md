@@ -1,5 +1,5 @@
 ---
-Position: 6
+position: 6
 title: Sucking Habits
 image: /uploads/sucking.png
 ---
