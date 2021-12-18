@@ -10,9 +10,8 @@
       Let's test some content
     </p>
 
-    <div v-for="edge in $page.service.edges" :key="edge.node.name">
-      <h2>{{ edge.node.name }}</h2>
-      <div class="markdown-body mb-8" id="article-area" v-html="edge.node.description" />
+    <div class="services-area">
+        <ServiceCard v-for="edge in $page.service.edges" :key="edge.node.name" :service="edge.node" />
     </div>
 
   </Layout>
@@ -24,7 +23,7 @@ query Services{
     edges {
       node {
         name
-        description
+        content
       }
     }
   }
@@ -32,9 +31,13 @@ query Services{
 </page-query>
 
 <script>
+import ServiceCard from '~/components/ServiceCard.vue'
 export default {
+  components: {
+    ServiceCard
+  },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home'
   }
 }
 </script>
@@ -42,5 +45,13 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+.services-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
 }
 </style>
