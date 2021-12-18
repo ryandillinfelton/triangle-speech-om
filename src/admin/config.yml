@@ -23,5 +23,6 @@ collections:
     create: true
     slug: "{{header}}"
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}

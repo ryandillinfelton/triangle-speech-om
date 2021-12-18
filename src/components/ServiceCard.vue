@@ -1,5 +1,5 @@
 <template>
-    <div class="service-card">
+    <div class="rounded drop-shadow service-card">
         <div class="img-container">
             <img v-bind:src="service.image"/>
         </div>
@@ -16,7 +16,7 @@
     }
 </script>
 
-<style>
+<style lang="scss">
 .service-card {
     margin-bottom: 1em;
     display: flex;
@@ -25,7 +25,7 @@
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-    background: #ECE9E6;
+    background: var(--card-bg-color);
     #background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 

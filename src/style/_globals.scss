@@ -1,0 +1,32 @@
+.card {
+    // color: var(--card-text-color);
+    // text-align: center;
+    // background: var(--card-bg-color);
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 3em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.bordered {
+    border-style: solid;
+    border-color: var(--color--blue);
+    border-width: 0.1em;
+}
+
+.rounded {
+    border-radius: var(--card-radius);
+}
+
+.drop-shadow {
+    box-shadow: 7px 7px 4px var(--card-shadow-color);
+}
+
+body {
+    background-color: var(--bg-color);
+}

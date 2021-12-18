@@ -1,5 +1,5 @@
 ---
-Position: 7
+position: 7
 title: Language Related Learning Challenges
 image: /uploads/language.jpeg
 ---
