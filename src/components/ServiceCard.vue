@@ -7,7 +7,7 @@
             <h2>{{ service.title }}</h2>
         </div>
         <div class="content">
-            <div class="markdown-body mb-8" id="article-area" v-html="service.content" />
+            <div class="markdown-body mb-8" v-html="service.content" />
         </div>
     </div>
 </template>

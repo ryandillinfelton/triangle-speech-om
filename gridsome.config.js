@@ -37,7 +37,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/InformationCards/**/*.md',
+        path: 'content/informationCards/**/*.md',
         typeName: 'InformationCard',
         remark: {
           plugins: [

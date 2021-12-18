@@ -21,8 +21,9 @@ collections:
     label: "Information Cards"
     folder: "content/informationCards"
     create: true
-    slug: "{{ header }}"
+    slug: "{{header}}"
     fields:
+      - {label: "ID", name: "id", widget: "number"}
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Image", name: "image", widget: "file"}
       - {label: "Body", name: "body", widget: "markdown"}
