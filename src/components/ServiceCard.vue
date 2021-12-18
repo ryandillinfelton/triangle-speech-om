@@ -1,10 +1,12 @@
 <template>
-    <div class="rounded drop-shadow service-card">
+    <div class="service-card card">
         <div class="img-container">
             <img v-bind:src="service.image"/>
         </div>
-        <div class="content">
+        <div class="title-area">
             <h2>{{ service.title }}</h2>
+        </div>
+        <div class="content">
             <div class="markdown-body mb-8" id="article-area" v-html="service.content" />
         </div>
     </div>
@@ -27,28 +29,33 @@
     border-radius: 1em;
     background: var(--card-bg-color);
     #background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-}
-
-.service-card .content {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.service-card .content h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    padding: 0.2rem;
-    margin: 0rem;
-}
-
-.service-card .img-container {
-    height: 15em;
-    overflow: hidden;
-}
-.service-card img{
-    width: 100%;
+    .title-area {
+        text-align: center;
+        padding: 0rem 0.2rem 0rem 0.2rem;
+        margin: 0rem;
+        background-color: var(--color-blue);
+        height: 6em;
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+    }
+    .content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .img-container {
+        height: 13em;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .service-card img{
+        width: 100%;
+    }
 }
 </style>

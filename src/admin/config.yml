@@ -17,6 +17,15 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "file"}
       - {label: "Description", name: "body", widget: "markdown"}
+  - name: "informationCards"
+    label: "Information Cards"
+    folder: "content/informationCards"
+    create: true
+    slug: "{{ header }}"
+    fields:
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Image", name: "image", widget: "file"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "assorted"
     label: "Assorted"
     folder: "content/assorted"

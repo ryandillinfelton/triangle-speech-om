@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded drop-shadow section-card">
+    <div class="card section-card">
         <h1> {{ section }} </h1>
     </div>
 </template>
@@ -12,11 +12,10 @@ export default {
 
 <style lang="scss">
 .section-card {
-    color: var(--color-salmon) !important;
-    background-color: #D16E6B;
-    border-color: #D16E6B;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    color: white;
+    background-color: var(--color-salmon);
+    border-color: var(--color-salmon) !important;
+    margin: 2rem 0rem;
     h1 {
         padding: 0em;
         text-transform: uppercase;

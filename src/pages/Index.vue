@@ -1,14 +1,18 @@
 <template>
   <Layout>
+    <InformationCard  />
+    
+    <!--
     <div class="information-card">
-        <div class="img-card bordered rounded drop-shadow">
+        <div class="img-card card">
             <img src="/uploads/logo.png"/>
         </div> 
-        <div class="content-area bordered rounded drop-shadow">
+        <div class="content-area card">
             <h1>Triangle Speech and Orofacial Myology</h1>
             <p>Welcome to Triangle Speech & Orofacial Myology. We are glad you are exploring our site and hope you find all the information you need to determine if this is the right practice to meet your needs or those of your child. Our goal is to find the best treatment approach to meet the concerns of each individual. At Triangle Speech & Orofacial Myology, we will complete a thorough evaluation and set up a treatment plan for therapy sessions as well as a home plan to ensure the quickest progress possible. </p>
         </div>
     </div>
+    -->
 
     <SectionHeaderCard section="Services" />
 
@@ -38,13 +42,15 @@ query Services {
 </page-query>
 
 <script>
-import ServiceCard from '~/components/ServiceCard.vue'
-import SectionHeaderCard from '~/components/SectionHeaderCard.vue'
+import InformationCard from '~/components/InformationCard.vue';
+import ServiceCard from '~/components/ServiceCard.vue';
+import SectionHeaderCard from '~/components/SectionHeaderCard.vue';
 
 export default {
   components: {
     ServiceCard,
-    SectionHeaderCard
+    SectionHeaderCard,
+    InformationCard
   },
   metaInfo: {
     title: 'Home'
@@ -61,7 +67,6 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 80vw;
-    margin-block: 2rem;
     gap: 2rem;
 }
 .information-card {
