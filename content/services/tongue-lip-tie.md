@@ -1,5 +1,5 @@
 ---
-Position: 5
+position: 5
 title: Tongue & Lip Tie
 image: /uploads/tonguetie.jpeg
 ---

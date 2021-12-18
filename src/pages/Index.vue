@@ -7,20 +7,20 @@
     </h1>
 
     <div class="services-area">
-        <ServiceCard v-for="edge in $page.service.edges" :key="edge.node.name" :service="edge.node" />
+        <ServiceCard v-for="edge in $page.service.edges" :key="edge.node.position" :service="edge.node" />
     </div>
 
   </Layout>
 </template>
 
 <page-query>
-query Services{
-  service: allService{
+query Services {
+  service: allService(sortBy: "position", order: ASC) {
     edges {
       node {
         title
-        content
         image
+        content
       }
     }
   }

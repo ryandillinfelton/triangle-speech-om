@@ -1,5 +1,5 @@
 ---
-Position: 3
+position: 3
 title: Buteyko Breathing Method
 image: /uploads/buteyko.jpg
 ---

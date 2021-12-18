@@ -1,4 +1,5 @@
 ---
+position: 2
 title: Talk Tools Oral Placement Therapy
 image: /uploads/talktools.jpg
 ---
