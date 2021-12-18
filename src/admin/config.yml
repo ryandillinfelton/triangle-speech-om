@@ -16,7 +16,7 @@ collections:
       - {label: "position", name: "Position", widget: "number"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "file"}
-      - {label: "Description", name: "content", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}
   - name: "assorted"
     label: "Assorted"
     folder: "content/assorted"

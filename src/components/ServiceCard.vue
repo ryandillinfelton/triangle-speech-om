@@ -1,6 +1,8 @@
 <template>
     <div class="service-card">
-        <img v-bind:src="service.image"/>
+        <div class="img-container">
+            <img v-bind:src="service.image"/>
+        </div>
         <div class="content">
             <h2>{{ service.title }}</h2>
             <div class="markdown-body mb-8" id="article-area" v-html="service.content" />
@@ -38,8 +40,14 @@
     text-align: center;
     font-size: 1.5rem;
     text-transform: capitalize;
+    padding: 0.2rem;
+    margin: 0rem;
 }
 
+.service-card .img-container {
+    height: 15em;
+    overflow: hidden;
+}
 .service-card img{
     width: 100%;
 }
