@@ -19,7 +19,7 @@ collections:
     label: "Assorted"
     folder: "content/assorted"
     create: true
-    slug: "{{name}}"
+    slug: "{{header}}"
     fields:
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
