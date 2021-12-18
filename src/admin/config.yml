@@ -13,9 +13,9 @@ collections:
     create: true
     slug: "{{name}}"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "file"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Description", name: "content", widget: "markdown"}
   - name: "assorted"
     label: "Assorted"
     folder: "content/assorted"

@@ -1,7 +1,8 @@
 <template>
     <div class="service-card">
+        <img v-bind:src="service.image"/>
         <div class="content">
-            <h2>{{ service.name }}</h2>
+            <h2>{{ service.title }}</h2>
             <div class="markdown-body mb-8" id="article-area" v-html="service.content" />
         </div>
     </div>
@@ -37,5 +38,9 @@
     text-align: center;
     font-size: 1.5rem;
     text-transform: capitalize;
+}
+
+.service-card img{
+    width: 100%;
 }
 </style>
