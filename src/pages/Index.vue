@@ -10,28 +10,26 @@
       Let's test some content
     </p>
 
-    <!--
-    <div v-for="edge in $page.services.edges" :key="edge.node.name">
+    <div v-for="edge in $page.service.edges" :key="edge.node.name">
       <h2>{{ edge.node.name }}</h2>
-      <p>{{ edge.node.content }}</p>
+      <div class="markdown-body mb-8" id="article-area" v-html="edge.node.description" />
     </div>
-    -->
 
   </Layout>
 </template>
 
-// <page-query>
-// query Services{
-//   service: allService{
-//     edges {
-//       node {
-//         name
-//         content
-//       }
-//     }
-//   }
-// }
-// </page-query>
+<page-query>
+query Services{
+  service: allService{
+    edges {
+      node {
+        name
+        description
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
