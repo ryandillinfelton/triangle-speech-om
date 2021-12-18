@@ -2,7 +2,7 @@
   "name": "triangle-speech-om",
   "private": true,
   "scripts": {
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && gridsome build",
+    "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
