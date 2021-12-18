@@ -13,9 +13,9 @@
 </template>
 
 <script>
-    export default {
-        props: ['service'],
-    }
+export default {
+    props: ['service'],
+}
 </script>
 
 <style lang="scss">
