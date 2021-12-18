@@ -1,5 +1,6 @@
 ---
 name: Orofacial Myology
+image: /uploads/orofacialmyology.jpg
 description: >-
   Ms. Felton is a certified orofacial myologist, a treatment method designed for
   children and adults. Orofacial Myology is the assessment and treatment of
