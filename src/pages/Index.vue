@@ -64,26 +64,11 @@ export default {
 .services-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 80vw;
     gap: 2rem;
 }
-.img-card {
-    flex: 1 1 auto;
-    overflow: hidden;
-}
-.content-area {
-    flex: 2 2 70%;
-    padding: 2rem;
-    h1 {
-        text-align: left;
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
-    p {
-        font-size: 1.2rem;
-    }
-}
+
 
 h1 {
     text-align: center;
