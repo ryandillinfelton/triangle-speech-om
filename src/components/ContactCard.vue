@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss">
 .contact-card {
-    color: black;
+    color: white;
     text-align: center;
     background-color: var(--color-blue);
     flex: 1 1 48%;

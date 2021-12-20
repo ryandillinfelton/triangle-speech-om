@@ -35,6 +35,7 @@ export default {
         padding: 0rem 0.2rem 0rem 0.2rem;
         margin: 0rem;
         background-color: var(--color-blue);
+        color: white;
         h2 {
             margin: 0;
             font-size: 2rem;

@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+  <!--
     <header class="header">
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
@@ -7,6 +8,7 @@
         <g-link class="nav__link" to="/about/">Contact</g-link>
       </nav>
     </header>
+  -->
     <div class="content">
       <slot/>
     </div>
@@ -57,6 +59,6 @@ body {
 
 .content {
   max-width: 80vw;
-  margin: 0 auto 2rem;
+  margin: 1rem auto 2rem;
 }
 </style>
