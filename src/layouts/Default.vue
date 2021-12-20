@@ -57,6 +57,6 @@ body {
 
 .content {
   max-width: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 </style>

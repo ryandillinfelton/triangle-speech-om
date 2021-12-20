@@ -13,6 +13,17 @@
 
     <SectionHeaderCard section="Contact" />
 
+    <div class="contact-area">
+        <ContactCard type="Phone" value="(919) 972-8134" />
+        <ContactCard type="Email" value="Diane@TriangleSpeechOM.com" />
+    </div>
+    <!--
+    <div class="contact-card card">
+        <h2> Email </h2>
+        <a href="mailto:Diane@TriangleSpeechOM.com">Diane@TriangleSpeechOM.com</a>
+    </div>
+    -->
+
   </Layout>
 </template>
 
@@ -44,12 +55,14 @@ query Services {
 import InformationCard from '~/components/InformationCard.vue';
 import ServiceCard from '~/components/ServiceCard.vue';
 import SectionHeaderCard from '~/components/SectionHeaderCard.vue';
+import ContactCard from '~/components/ContactCard.vue';
 
 export default {
   components: {
     ServiceCard,
     SectionHeaderCard,
-    InformationCard
+    InformationCard,
+    ContactCard
   },
   metaInfo: {
     title: 'Home'
@@ -68,8 +81,11 @@ export default {
     max-width: 80vw;
     gap: 2rem;
 }
-
-
+.contact-area {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
 h1 {
     text-align: center;
 }
