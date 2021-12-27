@@ -53,7 +53,7 @@ export default {
     img{
         min-height: 100%;
         min-width: 100%;
-        max-height: 100%;
+        max-width: 100%;
     }
 }
 </style>
