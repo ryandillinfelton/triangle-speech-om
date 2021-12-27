@@ -29,7 +29,6 @@ export default {
     // }
     justify-content: center;
     gap: 2rem;
-    width: fit-content;
 }
 .content-area {
     flex: 1 1 40%;
@@ -45,11 +44,16 @@ export default {
     }
 }
 .img-card {
-    flex: 1 1 30;
+    flex: 1 1 800px;
+    // min-width: 600px;
+    // @media (max-width: 600px) {
+    //     min-width: 0px;
+    // }
     overflow: hidden;
     img{
-        min-width: 100%;
         min-height: 100%;
+        min-width: 100%;
+        max-height: 100%;
     }
 }
 </style>
