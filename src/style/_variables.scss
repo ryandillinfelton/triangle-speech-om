@@ -13,11 +13,15 @@ body {
     --card-shadow-color: #999999;
     --card-radius: 0.5rem;
 
+    //breakpoints (DON'T actually use, for reference only)
+    --bp-smallest: 600px; //and under
+    --bp-medium: 600px; //and over
+
     // layout
     --service-spacing: 0.5em;
     --radius: 5px;
-
-    //breakpoints
-    --bp-smallest: 600px; //and under
-    --bp-medium: 600px; //and over
+    --global-content-width: 80vw;
+    @media (max-width: 600px ) {
+        --global-content-width: 90vw;
+    }
 }

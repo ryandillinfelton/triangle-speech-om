@@ -27,13 +27,12 @@ export default {
     // @media only screen and (min-width: 960px) {
     //   flex-direction: row;
     // }
-    max-width: 80vw;
     justify-content: center;
     gap: 2rem;
     width: fit-content;
 }
 .content-area {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     padding: 2rem;
     background-color: white;
     h1 {
@@ -46,11 +45,11 @@ export default {
     }
 }
 .img-card {
-    flex: 1 1 fit-content;
+    flex: 1 1 30;
     overflow: hidden;
     img{
-        width: 100%;
-        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
 </style>

@@ -77,7 +77,7 @@ export default {
 .services-area {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80vw;
+    //max-width: var(--global-content-width);
     gap: 2rem;
     @media only screen and (max-width: var(--bp-smallest)) {
       flex-direction: column;

@@ -58,7 +58,7 @@ body {
 }
 
 .content {
-  max-width: 80vw;
+  max-width: var(--global-content-width);
   margin: 1rem auto 2rem;
 }
 </style>

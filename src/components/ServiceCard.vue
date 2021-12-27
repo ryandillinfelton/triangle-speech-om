@@ -24,7 +24,9 @@ export default {
     display: flex;
     flex-direction: column;
     flex: 1 1 30%;
-    min-width: 22rem;
+    @media (max-width: 600px) {
+        min-width: 100%;
+    }
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
@@ -50,10 +52,10 @@ export default {
         gap: .5rem;
     }
     .img-container {
-        height: 13em;
         overflow: hidden;
         img {
             width: 100%;
+            height: 100%;
         }
     }
     .service-card img{
