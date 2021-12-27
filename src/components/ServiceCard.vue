@@ -23,8 +23,8 @@ export default {
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
-    flex: 1 2 30%;
-    //width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    flex: 1 1 30%;
+    min-width: 22rem;
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;

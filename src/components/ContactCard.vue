@@ -25,6 +25,9 @@ export default {
     }
     h3 {
         margin-top: 0rem;
+        @media (max-width: 600px) {
+            font-size: 100%;
+        }
     }
 }
 </style>

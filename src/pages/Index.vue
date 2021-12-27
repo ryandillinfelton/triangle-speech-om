@@ -77,12 +77,19 @@ export default {
 .services-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     max-width: 80vw;
     gap: 2rem;
+    @media only screen and (max-width: var(--bp-smallest)) {
+      flex-direction: column;
+    }
+    @media only screen and (min-width: var(--bp-medium)) {
+      flex-direction: row;
+    }
+    justify-content: space-evenly;
 }
 .contact-area {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2rem;
 }

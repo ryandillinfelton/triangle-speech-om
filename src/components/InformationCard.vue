@@ -17,8 +17,23 @@ export default {
 </script>
 
 <style lang="scss">
+.information-card {
+    display: flex;
+    flex-wrap: wrap;
+    // @media only screen and (max-width: 960px) {
+    //     background-color: blue;
+    //     flex-direction: column;
+    // }
+    // @media only screen and (min-width: 960px) {
+    //   flex-direction: row;
+    // }
+    max-width: 80vw;
+    justify-content: center;
+    gap: 2rem;
+    width: fit-content;
+}
 .content-area {
-    flex: 2 2 70%;
+    flex: 1 1 45%;
     padding: 2rem;
     background-color: white;
     h1 {
@@ -30,19 +45,12 @@ export default {
         font-size: 1.2rem;
     }
 }
-.information-card {
-    display: flex;
-    max-width: 80vw;
-    justify-content: center;
-    gap: 2rem;
-    width: fit-content;
-}
 .img-card {
-    flex: 1 1 auto;
+    flex: 1 1 fit-content;
     overflow: hidden;
-    max-height: 32rem;
     img{
-        margin: -1rem;
+        width: 100%;
+        height: 100%;
     }
 }
 </style>
