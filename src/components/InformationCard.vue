@@ -20,13 +20,6 @@ export default {
 .information-card {
     display: flex;
     flex-wrap: wrap;
-    // @media only screen and (max-width: 960px) {
-    //     background-color: blue;
-    //     flex-direction: column;
-    // }
-    // @media only screen and (min-width: 960px) {
-    //   flex-direction: row;
-    // }
     justify-content: center;
     gap: 2rem;
 }
@@ -44,11 +37,7 @@ export default {
     }
 }
 .img-card {
-    flex: 1 1 800px;
-    // min-width: 600px;
-    // @media (max-width: 600px) {
-    //     min-width: 0px;
-    // }
+    flex: 0 1 800px;
     overflow: hidden;
     img{
         min-height: 100%;
