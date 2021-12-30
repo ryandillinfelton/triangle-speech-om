@@ -1,5 +1,9 @@
 <template>
   <Layout>
+    <div class="card" id="banner"> 
+      <p> Now available for teletherapy sessions. <button class="drop-shadow" onclick="location.href='#contact'"> Contact for more information </button> </p>
+    </div>
+
     <InformationCard :information="$page.welcomeInformationCard"/>
 
     <SectionHeaderCard section="Services" />
@@ -13,16 +17,10 @@
 
     <SectionHeaderCard section="Contact" />
 
-    <div class="contact-area">
+    <div class="contact-area" id="contact">
         <ContactCard type="Phone" value="(919) 972-8134" />
         <ContactCard type="Email" value="Diane@TriangleSpeechOM.com" />
     </div>
-    <!--
-    <div class="contact-card card">
-        <h2> Email </h2>
-        <a href="mailto:Diane@TriangleSpeechOM.com">Diane@TriangleSpeechOM.com</a>
-    </div>
-    -->
 
   </Layout>
 </template>
@@ -71,6 +69,33 @@ export default {
 </script>
 
 <style lang="scss">
+button {
+  background-color: white;
+  border-style: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+  &:hover {
+    background-color: #EEEEEE;
+    box-shadow: 4px 4px 2px var(--card-shadow-color);
+  }
+  &:active {
+    background-color: #DDDDDD;
+    box-shadow: 1px 1px 1px var(--card-shadow-color);
+  }
+}
+#banner {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  margin-bottom: 2rem;
+}
 .home-links a {
   margin-right: 1rem;
 }

@@ -52,7 +52,7 @@ module.exports = {
         publicPath: `/admin`,
         modulePath: `src/admin/index.js`
       }
-    },
+    }
   ],
   transformers: {
     remark: {
