@@ -37,6 +37,7 @@ export default {
     }
 }
 .img-card {
+    background-color: var(--color-blue);
     flex: 0 1 800px;
     overflow: hidden;
     img{
