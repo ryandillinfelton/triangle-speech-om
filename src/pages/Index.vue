@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <div class="card" id="banner"> 
-      <p> Now available for teletherapy sessions. <button class="drop-shadow" onclick="location.href='#contact'"> Contact for more information </button> </p>
+      <p> Now available for teletherapy sessions. </p>
+      <button class="drop-shadow" onclick="location.href='#contact'"> Contact for more information </button> 
     </div>
 
     <InformationCard :information="$page.welcomeInformationCard"/>
@@ -73,6 +74,7 @@ button {
   background-color: white;
   border-style: none;
   border-radius: 0.3rem;
+  margin: 0.5rem 0;
   padding: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -95,6 +97,11 @@ button {
   background-color: var(--color-red);
   border-color: var(--color-red);
   margin-bottom: 2rem;
+  display: block;
+  p {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
 .home-links a {
   margin-right: 1rem;
