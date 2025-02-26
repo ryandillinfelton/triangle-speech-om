@@ -1,8 +1,7 @@
 <template>
   <Layout>
     <div class="card" id="banner"> 
-      <p> Now available for teletherapy sessions. </p>
-      <button class="drop-shadow" onclick="location.href='#contact'"> Contact for more information </button> 
+      <p> Permanently closed </p>
     </div>
 
     <InformationCard :information="$page.welcomeInformationCard"/>
